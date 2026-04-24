@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NoNoty — Privacy Policy</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 2em auto; padding: 0 1em; line-height: 1.6; color: #222; }
+    h1 { border-bottom: 2px solid #006874; padding-bottom: 0.3em; }
+    h2 { color: #006874; margin-top: 1.8em; }
+    .effective { color: #666; font-style: italic; }
+    .lang-switch { text-align: right; font-size: 0.9em; }
+    a { color: #006874; }
+    ul { padding-left: 1.4em; }
+    code { background: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #ddd; font-size: 0.9em; color: #666; }
+  </style>
+</head>
+<body>
+<div class="lang-switch"><a href="#es">Español</a></div>
+<h1>NoNoty — Privacy Policy</h1>
+<p class="effective">Effective date: April 2026</p>
+
+<p>NoNoty ("the app") is developed by YoSTE Softworks ("we", "us"). This privacy policy explains what information the app accesses, how it is used, and what happens to it. It applies to the Android app distributed through Google Play under the package <code>com.yoste.nonoty</code>.</p>
+
+<h2>Summary</h2>
+<p><strong>NoNoty does not collect, store, or transmit any personal data.</strong> The app has no servers, no user accounts, no analytics, no advertising, and no third-party SDKs other than Google Play Billing (used only when you choose to purchase the Premium unlock). Everything the app does to detect and block notifications or apps happens entirely on your device.</p>
+
+<h2>What the app accesses on your device</h2>
+<ul>
+  <li><strong>Installed app list</strong> (<code>QUERY_ALL_PACKAGES</code>): so you can pick which apps to target with blocking rules. The list is used only to populate the selection UI and never leaves your device.</li>
+  <li><strong>Incoming notifications</strong> (Notification Listener): when another app posts a notification, NoNoty reads the app name and notification text to check it against your blocking rules. If it matches, the notification is dismissed. Notification content is read in memory only and is never stored, logged, or transmitted.</li>
+  <li><strong>Foreground app</strong> (Accessibility Service): NoNoty reads only the package name of the app you have just opened, to show a block screen (Focus Mode) or count app opens (Stats). The service does not read the content of any app, does not capture input or passwords, does not record the screen, and does not perform actions on your behalf other than showing NoNoty's own in-app block screen when you open a blocked app you previously configured.</li>
+  <li><strong>Notifications posted by NoNoty</strong> (<code>POST_NOTIFICATIONS</code>): so the app can show its own status notification.</li>
+</ul>
+
+<h2>What the app stores on your device</h2>
+<p>The following data is stored in the app's private storage, which is not accessible to other apps or to us:</p>
+<ul>
+  <li>Your blocking rules (app package names, time windows, days of the week, keywords)</li>
+  <li>Your Focus Mode rules</li>
+  <li>Aggregated counts of blocked notifications and app opens, used for the Stats tab</li>
+  <li>Your preferences (theme, notification display mode, onboarding status)</li>
+  <li>A cached flag indicating whether you have purchased the Premium unlock (verified against Google Play when online)</li>
+</ul>
+<p>The app never stores the content of other apps' notifications. For Stats, only numeric counts per package are kept.</p>
+
+<h2>Purchases (Google Play Billing)</h2>
+<p>NoNoty offers a one-time in-app purchase that unlocks Premium features. Purchases are processed entirely by Google Play Billing. YoSTE Softworks never receives or sees your payment details, card numbers, billing address, or Google account identifiers.</p>
+<p>To confirm your purchase status when you open the app, NoNoty asks Google Play whether your Google account currently owns the Premium product. Google Play returns only a yes/no purchase token, which the app caches locally so Premium works offline. The app re-verifies this status periodically when online.</p>
+<p>Refund requests and payment disputes are handled directly by Google through the Play Store. See <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play's refund policy</a> for details.</p>
+
+<h2>Data sharing</h2>
+<p>We do not share, sell, rent, or transmit any data about you or your usage of the app. The app itself makes no network requests. The only network communication in the context of NoNoty is between your device and Google Play's servers, for verifying Premium purchases. That communication is initiated and secured by the Google Play Billing Library, not by us.</p>
+
+<h2>Children</h2>
+<p>NoNoty is not directed at children under 13 and does not knowingly collect any information from children. The app is rated for users aged 13 and over.</p>
+
+<h2>Changes to this policy</h2>
+<p>Any changes will be posted to this page. The effective date above will be updated. Material changes will also be communicated through an in-app notice where appropriate.</p>
+
+<h2>Contact</h2>
+<p>Questions, requests, or concerns? Email <a href="mailto:spoejones@gmail.com">spoejones@gmail.com</a>.</p>
+
+<hr>
+
+<h1 id="es">NoNoty — Política de privacidad</h1>
+<p class="effective">Fecha efectiva: Abril 2026</p>
+
+<p>NoNoty ("la app") es desarrollada por YoSTE Softworks ("nosotros"). Esta política explica a qué información accede la app, cómo se usa y qué pasa con ella. Aplica a la app de Android distribuida en Google Play bajo el paquete <code>com.yoste.nonoty</code>.</p>
+
+<h2>Resumen</h2>
+<p><strong>NoNoty no recopila, almacena ni transmite datos personales.</strong> La app no tiene servidores, cuentas de usuario, análisis, publicidad, ni SDKs de terceros distintos a Google Play Billing (usado solo cuando eliges comprar el desbloqueo Premium). Todo lo que hace la app para detectar y bloquear notificaciones o apps ocurre enteramente en tu dispositivo.</p>
+
+<h2>A qué accede la app en tu dispositivo</h2>
+<ul>
+  <li><strong>Lista de apps instaladas</strong> (<code>QUERY_ALL_PACKAGES</code>): para que elijas a cuáles aplicar reglas. La lista solo alimenta la interfaz de selección y nunca sale de tu dispositivo.</li>
+  <li><strong>Notificaciones entrantes</strong> (Notification Listener): cuando otra app publica una notificación, NoNoty lee el nombre de la app y el texto para compararlo con tus reglas. Si coincide, la notificación se descarta. El contenido se lee solo en memoria; nunca se guarda, registra ni transmite.</li>
+  <li><strong>App en primer plano</strong> (Accessibility Service): NoNoty lee solo el nombre del paquete de la app que acabas de abrir, para mostrar una pantalla de bloqueo (Modo Enfoque) o contar aperturas (Estadísticas). El servicio no lee el contenido de ninguna app, no captura entradas ni contraseñas, no graba la pantalla, y no realiza acciones en tu nombre aparte de mostrar la pantalla de bloqueo propia de NoNoty cuando abres una app bloqueada.</li>
+  <li><strong>Notificaciones de NoNoty</strong> (<code>POST_NOTIFICATIONS</code>): para que la app pueda mostrar su propia notificación de estado.</li>
+</ul>
+
+<h2>Qué almacena la app en tu dispositivo</h2>
+<p>La siguiente información se guarda en el almacenamiento privado de la app, no accesible para otras apps ni para nosotros:</p>
+<ul>
+  <li>Tus reglas de bloqueo (paquetes, ventanas horarias, días, palabras clave)</li>
+  <li>Tus reglas de Modo Enfoque</li>
+  <li>Conteos agregados de notificaciones bloqueadas y aperturas, para la pestaña Estadísticas</li>
+  <li>Tus preferencias (tema, modo de notificación, estado de onboarding)</li>
+  <li>Un indicador en caché de si has comprado el desbloqueo Premium (verificado contra Google Play cuando hay conexión)</li>
+</ul>
+<p>La app nunca guarda el contenido de las notificaciones de otras apps. Para las Estadísticas, solo se guardan conteos numéricos por paquete.</p>
+
+<h2>Compras (Google Play Billing)</h2>
+<p>NoNoty ofrece una compra única dentro de la app que desbloquea funciones Premium. Las compras son procesadas enteramente por Google Play Billing. YoSTE Softworks nunca recibe ni ve tus datos de pago, números de tarjeta, dirección de facturación, ni identificadores de cuenta de Google.</p>
+<p>Para confirmar tu estado de compra al abrir la app, NoNoty pregunta a Google Play si tu cuenta de Google posee actualmente el producto Premium. Google Play devuelve solo un token de compra (sí/no), que la app guarda en caché localmente para que Premium funcione sin conexión. La app vuelve a verificar este estado periódicamente cuando hay conexión.</p>
+<p>Las solicitudes de reembolso y disputas de pago se tramitan directamente con Google a través de Play Store. Consulta la <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">política de reembolsos de Google Play</a>.</p>
+
+<h2>Compartir datos</h2>
+<p>No compartimos, vendemos, alquilamos ni transmitimos datos sobre ti o tu uso de la app. La app no hace solicitudes de red por sí misma. La única comunicación de red en el contexto de NoNoty ocurre entre tu dispositivo y los servidores de Google Play para verificar compras Premium; esa comunicación la inicia y asegura la biblioteca de Google Play Billing, no nosotros.</p>
+
+<h2>Niños</h2>
+<p>NoNoty no está dirigida a menores de 13 años y no recopila información de niños a sabiendas. La app está clasificada para usuarios de 13 años en adelante.</p>
+
+<h2>Cambios a esta política</h2>
+<p>Cualquier cambio se publicará en esta página. La fecha efectiva se actualizará. Cambios importantes también se comunicarán mediante un aviso en la app cuando corresponda.</p>
+
+<h2>Contacto</h2>
+<p>¿Preguntas o inquietudes? Escríbenos a <a href="mailto:spoejones@gmail.com">spoejones@gmail.com</a>.</p>
+
+<footer>© YoSTE Softworks</footer>
+</body>
+</html>
